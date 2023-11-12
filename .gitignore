@@ -1,0 +1,92 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+
+# Editor
+*.swp
+
+# Checkpoints
+*.ckpt
+*.pth
+*.pt
+
+# Logs
+*.log
+
+# Data
+data/*/
+
+# Model files
+*.onnx
+*.tflite
+*.mlmodel
+*_pb/
+*required_operators.config
+*required_operators.with_runtime_opt.config
+
+.DS_Store
+*.slurm
+
+*/tmp/
+tmp.ipynb
+experiments/*/results*
+experiments/*/*.csv
+.ipynb_checkpoints/
+vscode.*
+tensorboard/
+
+# Xcode
+*.xcworkspace/
+Pods/
+Podfile.lock
+
+# ONNX
+*.onnx
+*.ort
+
+# STEAM AUDIO API
+motion/libs/**
+motion/obj
+motion/moving_sources
+motion/*.wav
+motion/audio
+
+__pycache__/

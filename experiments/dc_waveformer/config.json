@@ -1,0 +1,70 @@
+{
+    "model": "src.training.dcc_tf_binaural",
+    "base_metric": "scale_invariant_signal_noise_ratio",
+    "fix_lr_epochs": 40,
+    "epochs": 80,
+    "batch_size": 16,
+    "eval_batch_size": 64,
+    "n_workers": 16,
+    "model_params": {
+        "L": 32,
+        "label_len": 20,
+        "model_dim": 256,
+        "num_enc_layers": 10,
+        "num_dec_layers": 1,
+        "dec_buf_len": 13,
+        "dec_chunk_size": 13,
+        "use_pos_enc": true,
+        "conditioning": "mult",
+        "out_buf_len": 4
+    },
+    "train_dataset": "src.training.datasets.curated_binaural_augrir.CuratedBinauralAugRIRDataset",
+    "train_data_args": {
+        "fg_dir": "data/BinauralCuratedDataset/scaper_fmt/train",
+        "bg_dir": "data/BinauralCuratedDataset/TAU-acoustic-sounds/TAU-urban-acoustic-scenes-2019-development",
+        "bg_scaper_dir": "data/BinauralCuratedDataset/bg_scaper_fmt/train",
+        "jams_dir": "data/BinauralCuratedDataset/jams_hard/train",
+        "hrtf_dir": "data/BinauralCuratedDataset/hrtf",
+        "dset": "train",
+        "sr": 44100,
+        "resample_rate": null,
+        "reverb": true
+    },
+    "val_dataset": "src.training.datasets.curated_binaural_augrir.CuratedBinauralAugRIRDataset",
+    "val_data_args": {
+        "fg_dir": "data/BinauralCuratedDataset/scaper_fmt/val",
+        "bg_dir": "data/BinauralCuratedDataset/TAU-acoustic-sounds/TAU-urban-acoustic-scenes-2019-development",
+        "bg_scaper_dir": "data/BinauralCuratedDataset/bg_scaper_fmt/val",
+        "jams_dir": "data/BinauralCuratedDataset/jams_hard/val",
+        "hrtf_dir": "data/BinauralCuratedDataset/hrtf",
+        "dset": "val",
+        "sr": 44100,
+        "resample_rate": null,
+        "reverb": true
+    },
+    "test_dataset": "src.training.datasets.curated_binaural_augrir.CuratedBinauralAugRIRDataset",
+    "test_data_args": {
+        "fg_dir": "data/BinauralCuratedDataset/scaper_fmt/test",
+        "bg_dir": "data/BinauralCuratedDataset/TAU-acoustic-sounds/TAU-urban-acoustic-scenes-2019-evaluation",
+        "bg_scaper_dir": "data/BinauralCuratedDataset/bg_scaper_fmt/test",
+        "jams_dir": "data/BinauralCuratedDataset/jams/test",
+        "hrtf_dir": "data/BinauralCuratedDataset/hrtf",
+        "dset": "test",
+        "sr": 44100,
+        "resample_rate": null,
+        "reverb": true
+    },
+    "optim": {
+        "lr": 0.0005,
+        "weight_decay": 0.0
+    },
+    "lr_sched": {
+        "mode": "max",
+        "factor": 0.5,
+        "patience": 5,
+        "min_lr": 5e-06,
+        "threshold": 0.1,
+        "threshold_mode": "abs"
+    },
+    "commit_hash": "dce742247886d0c98116fea3602c78bc215e5591"
+}
