@@ -21,4 +21,4 @@ Roughly speaking, if an audio file is not part of our foreground set, then we co
 
 Audio files are placed into the Scaper directories by creating symbolic links, so as not to increase dataset size. In addition to organizing the audio files in this way, the dataset consolidation step also creates a CSV containing the start and end times of the sounds in each file, which is useful when creating audio mixtures.
 
-This step is done in ```data/compile/consolidate_datasets.py```. Note that this file is set up to call all the label collection scripts before writing the symlinks.
+This step is done in ```data/compile/consolidate_datasets.py```. Note that this file is set up to call all the label collection scripts before writing the symlinks. Once you finish this step, you can create JAMS files using Scaper.
