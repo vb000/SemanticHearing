@@ -8,8 +8,6 @@ https://github.com/vb000/SemanticHearing/assets/16723254/f1b33d8c-179a-4d50-92aa
 
 ## Conda environment setup
 
-
-    # Commands in all sections except the Dataset section are run from repo's toplevel directory
     conda create --name semhear python=3.8
     conda activate semhear
     pip install -r requirements.txt
