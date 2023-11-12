@@ -1,6 +1,6 @@
 # Semantic Hearing [![Gradio demo](https://img.shields.io/badge/DL.ACM-abs-green)](https://dl.acm.org/doi/10.1145/3586183.3606779) [![Gradio demo](https://img.shields.io/badge/DL.ACM-pdf-green)](https://dl.acm.org/doi/pdf/10.1145/3586183.3606779)
 
-This repository provides code for the binaural target sound extraction model proposed in the paper, _Semantic Hearing: Programming Acoustic Scenes with Binaural Hearables_, presented at UIST'23. This model lets you create systems that let you control what you want to hear in the environment, in real-time, using noise-cancelling earbuds & headphones.
+This repository provides code for the binaural target sound extraction model proposed in the paper, _Semantic Hearing: Programming Acoustic Scenes with Binaural Hearables_, presented at UIST'23. This model helps us create systems that let you control what you want to hear in the environment, in real-time, using noise-cancelling earbuds & headphones.
 
 https://github.com/vb000/SemanticHearing/assets/16723254/f1b33d8c-179a-4d50-92aa-6a99dde696d0
 
