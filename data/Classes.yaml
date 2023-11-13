@@ -1,0 +1,65 @@
+# [NATURE]
+ocean:
+- Waves, surf
+
+thunderstorm:
+- Thunderstorm
+
+# [ANIMAL]
+dog:
+- Bark
+
+door_knock:
+- Knock
+
+cat:
+- Meow
+
+birds_chirping:
+- Chirp, tweet
+
+cricket:
+- Cricket
+
+cock_a_doodle_doo:
+- Crowing, cock-a-doodle-doo
+
+# [HUMAN]
+baby_cry:
+- Baby cry, infant cry
+
+speech:
+- Speech
+
+singing:
+- Singing
+
+# [MUSIC]
+music:
+- Melody
+
+# [Sounds of Things]
+gunshot:
+- Gunshot, gunfire
+
+glass_breaking:
+- Shatter
+
+computer_typing:
+- Computer keyboard
+
+toilet_flush:
+- Toilet flush
+
+hammer:
+- Hammer
+
+siren:
+- Siren
+
+alarm_clock:
+- Alarm clock
+
+car_horn:
+- Vehicle horn, car horn, honking
+
